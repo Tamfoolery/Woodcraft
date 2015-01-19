@@ -1,4 +1,4 @@
-# Woodcraft
+![Woodcraft](https://raw.githubusercontent.com/Tamfoolery/Woodcraft/master/art/readme_banner.png)
 
 **Early game, wooden technology**
 
