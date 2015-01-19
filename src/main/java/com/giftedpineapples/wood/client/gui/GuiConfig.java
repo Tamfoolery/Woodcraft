@@ -6,7 +6,7 @@ import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;
 import net.minecraftforge.common.config.Configuration;
 
-public class GuiConfig extends net.minecraftforge.fml.client.config.GuiConfig {
+public class GuiConfig extends cpw.mods.fml.client.config.GuiConfig {
 
 	public GuiConfig(GuiScreen guiScreen)
 	{
