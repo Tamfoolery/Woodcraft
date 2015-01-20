@@ -1,6 +1,7 @@
 package com.giftedpineapples.wood.init;
 
 import com.giftedpineapples.wood.block.BlockMechanicalRoot;
+import com.giftedpineapples.wood.reference.Names;
 import com.giftedpineapples.wood.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -11,7 +12,7 @@ public class ModBlocks {
 
 	public static void init()
 	{
-		GameRegistry.registerBlock(mechanicalRoot, "mechanicalRoot");
+		GameRegistry.registerBlock(mechanicalRoot, Names.Blocks.MECHANICAL_ROOT);
 	}
 
 }

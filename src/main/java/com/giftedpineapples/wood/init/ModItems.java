@@ -2,6 +2,7 @@ package com.giftedpineapples.wood.init;
 
 import com.giftedpineapples.wood.item.ItemWC;
 import com.giftedpineapples.wood.item.ItemWoodenGear;
+import com.giftedpineapples.wood.reference.Names;
 import com.giftedpineapples.wood.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.ItemStack;
@@ -14,7 +15,7 @@ public class ModItems {
 
 	public static void init()
 	{
-		GameRegistry.registerItem(woodenGear, "woodenGear");
+		GameRegistry.registerItem(woodenGear, Names.Items.WOODEN_GEAR);
 		OreDictionary.registerOre("gearWood", new ItemStack(woodenGear));
 	}
 
