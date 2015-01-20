@@ -5,4 +5,4 @@ itemGroup.wood=Woodcraft
 item.wood:woodenGear.name=Wooden Gear
 
 # Tiles / Blocks
-tile.wood:root.name=Root
+tile.wood:mechanicalRoot.name=Mechanical Root

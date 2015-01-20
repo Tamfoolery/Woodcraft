@@ -3,6 +3,7 @@ package com.giftedpineapples.wood;
 import com.giftedpineapples.wood.handler.ConfigHandler;
 import com.giftedpineapples.wood.init.ModBlocks;
 import com.giftedpineapples.wood.init.ModItems;
+import com.giftedpineapples.wood.init.Recipes;
 import com.giftedpineapples.wood.proxy.IProxy;
 import com.giftedpineapples.wood.reference.Reference;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -36,7 +37,7 @@ public class Woodcraft {
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event)
 	{
-		//
+		Recipes.init();
 	}
 
 	@Mod.EventHandler
