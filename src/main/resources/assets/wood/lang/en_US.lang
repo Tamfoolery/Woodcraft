@@ -1,2 +1,5 @@
 # Items
 item.wood:woodenGear.name=Wooden Gear
+
+# Tiles / Blocks
+tile.wood:root.name=Root

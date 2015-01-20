@@ -1,6 +1,7 @@
 package com.giftedpineapples.wood;
 
 import com.giftedpineapples.wood.handler.ConfigHandler;
+import com.giftedpineapples.wood.init.ModBlocks;
 import com.giftedpineapples.wood.init.ModItems;
 import com.giftedpineapples.wood.proxy.IProxy;
 import com.giftedpineapples.wood.reference.Reference;
@@ -27,8 +28,9 @@ public class Woodcraft {
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigHandler());
 
-		// Register Items
+		// Register Items & Blocks
 		ModItems.init();
+		ModBlocks.init();
 	}
 
 	@Mod.EventHandler
@@ -44,4 +46,3 @@ public class Woodcraft {
 	}
 
 }
-//https://www.youtube.com/watch?v=RuANKfb92T0&index=10&list=PLQPiZYWovwmnZlgvbHCbz6TefIgeEiVcj
