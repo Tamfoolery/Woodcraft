@@ -13,7 +13,7 @@ Power:
 - Power converter to accept or convert to other power types
 
 Plants:
-- Abacá (produces Abacá leaves & seeds, used to create Abacá Rope, grown on tilled soil to 2 blocks tall)
+- Abacá (produces Abacá leaves & seeds, used to create Abacá Rope, grown on dirt or grass to 2 blocks tall)
 
 Misc:
 - Drying frame (dry Abacá leaves into Abacá fibers)
@@ -24,7 +24,7 @@ Machines:
 - Wooden quarry with changeable mining bit (respects mining level of blocks)
 
 Quarry:
-- Quarry consists of key block, 3 corner frames (or just regular frames that turn, like track), and unlimited(?) frames, placed in a square, and the Quarry Miner placed on top of the key block
+- Quarry consists of key block and frames, placed in a square, and the Quarry Miner placed on top of the key block(?)
 - The quarry miner has an interchangeable mining piece (made from wood, stone, iron, or diamond) that gets damaged slowly over time
 - When mining the Miner will work it's way, block by block, across each layer within the frame mining out the block beneath it if it can
 - Key block placed in one corner - power in, mined items out
