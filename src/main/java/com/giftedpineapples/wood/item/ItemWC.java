@@ -1,5 +1,6 @@
 package com.giftedpineapples.wood.item;
 
+import com.giftedpineapples.wood.creativetab.CreativeTabWC;
 import com.giftedpineapples.wood.reference.Textures;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -13,6 +14,7 @@ public class ItemWC extends Item {
 	{
 		super();
 		this.setNoRepair();
+		this.setCreativeTab(CreativeTabWC.WC_TAB);
 	}
 
 	@Override

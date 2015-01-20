@@ -1,5 +1,6 @@
 package com.giftedpineapples.wood.block;
 
+import com.giftedpineapples.wood.creativetab.CreativeTabWC;
 import com.giftedpineapples.wood.reference.Textures;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -13,6 +14,7 @@ public class BlockWC extends Block {
 	{
 		super(material);
 		this.blockHardness = 2.0f;
+		this.setCreativeTab(CreativeTabWC.WC_TAB);
 	}
 
 	public BlockWC()
