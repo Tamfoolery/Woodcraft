@@ -50,7 +50,7 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Woodcraft_.iml" filepath="$PROJECT_DIR$/Woodcraft_.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Woodcraft.iml" filepath="$PROJECT_DIR$/Woodcraft.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">

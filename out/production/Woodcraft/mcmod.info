@@ -1,0 +1,18 @@
+[
+    {
+        "modid": "wood",
+        "name": "Woodcraft",
+        "description": "Early game wooden technology",
+        "version": "0.1.0",
+        "mcversion": "1.7.10",
+        "url": "http://minecraft.giftedpineapples.com/",
+        "updateUrl": "",
+        "authorList": [
+            "Tamfoolery"
+        ],
+        "credits": "",
+        "logoFile": "assets/wood/textures/logo.png",
+        "screenshots": [],
+        "dependencies": []
+    }
+]
