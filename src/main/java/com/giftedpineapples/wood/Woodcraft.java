@@ -37,6 +37,9 @@ public class Woodcraft {
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event)
 	{
+		// Initialize custom rendering and pre-load textures (Client only)
+		proxy.initRenderingAndTextures();
+
 		Recipes.init();
 	}
 
