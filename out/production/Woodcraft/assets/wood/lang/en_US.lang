@@ -1,8 +1,0 @@
-# Misc
-itemGroup.wood=Woodcraft
-
-# Items
-item.wood:woodenGear.name=Wooden Gear
-
-# Tiles / Blocks
-tile.wood:mechanicalRoot.name=Mechanical Root
