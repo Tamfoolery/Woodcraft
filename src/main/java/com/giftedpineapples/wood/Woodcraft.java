@@ -3,6 +3,7 @@ package com.giftedpineapples.wood;
 import com.giftedpineapples.wood.handler.ConfigHandler;
 import com.giftedpineapples.wood.init.ModBlocks;
 import com.giftedpineapples.wood.init.ModItems;
+import com.giftedpineapples.wood.init.ModTileEntities;
 import com.giftedpineapples.wood.init.Recipes;
 import com.giftedpineapples.wood.proxy.IProxy;
 import com.giftedpineapples.wood.reference.Reference;
@@ -37,6 +38,9 @@ public class Woodcraft {
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event)
 	{
+		// Init Tile Entities
+		ModTileEntities.init();
+
 		// Initialize custom rendering and pre-load textures (Client only)
 		proxy.initRenderingAndTextures();
 

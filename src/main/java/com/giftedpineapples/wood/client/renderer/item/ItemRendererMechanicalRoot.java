@@ -53,7 +53,7 @@ public class ItemRendererMechanicalRoot implements IItemRenderer {
 			}
 			case INVENTORY:
 			{
-				renderMechanicalRoot(-1.0F, -0.9F, 0.0F);
+				renderMechanicalRoot(0.1F, -0.6F, 0.0F, 0.5F, 0.5F, 0.5F);
 				return;
 			}
 			default:
@@ -62,11 +62,16 @@ public class ItemRendererMechanicalRoot implements IItemRenderer {
 
 	private void renderMechanicalRoot(float x, float y, float z)
 	{
+		renderMechanicalRoot(x, y, z, 1F, 1F, 1F);
+	}
+
+	private void renderMechanicalRoot(float x, float y, float z, float sx, float sy, float sz)
+	{
 		GL11.glPushMatrix();
 
-		GL11.glScalef(1F, 1F, 1F);
+		GL11.glScalef(sx, sy, sz);
 		GL11.glTranslatef(x, y, z);
-		GL11.glRotatef(-90F, 1F, 0, 0);
+		GL11.glRotatef(0, 1F, 0, 0);
 
 		// Bind texture
 		FMLClientHandler.instance().getClient().renderEngine.bindTexture(Textures.Model.MECHANICAL_ROOT);

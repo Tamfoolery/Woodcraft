@@ -1,6 +1,8 @@
 ![Woodcraft](https://raw.githubusercontent.com/Tamfoolery/Woodcraft/master/art/readme_banner.png)
 
-**Early game, wooden technology**
+## Early game, wooden technology
+
+[**Progress screenshots**](http://imgur.com/a/yaBdn)
 
 Power:
 - Kinetic Power (KP)
