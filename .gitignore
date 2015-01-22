@@ -24,5 +24,8 @@
 /*.iws
 /atlassian-ide-plugin.xml
 
+## Windows
+Thumbs.db
+
 ## Mod Misc
 /art/screenshots

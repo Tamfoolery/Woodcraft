@@ -10,6 +10,7 @@ public final class Names {
 	public static final class Blocks
 	{
 		public static final String MECHANICAL_ROOT = "mechanicalRoot";
+		public static final String ROTARY_SHAFT = "rotaryShaft";
 	}
 
 }

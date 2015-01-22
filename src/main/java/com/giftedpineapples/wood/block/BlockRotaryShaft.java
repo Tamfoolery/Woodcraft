@@ -2,26 +2,29 @@ package com.giftedpineapples.wood.block;
 
 import com.giftedpineapples.wood.reference.Names;
 import com.giftedpineapples.wood.reference.RenderIds;
-import com.giftedpineapples.wood.tileentity.TileEntityMechanicalRoot;
+import com.giftedpineapples.wood.tileentity.TileEntityRotaryShaft;
 import net.minecraft.block.ITileEntityProvider;
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
-public class BlockMechanicalRoot extends BlockWC implements ITileEntityProvider {
+public class BlockRotaryShaft extends BlockWC implements ITileEntityProvider {
 
-	public BlockMechanicalRoot()
+	public BlockRotaryShaft()
 	{
 		super();
-		this.setBlockName(Names.Blocks.MECHANICAL_ROOT);
-		this.setBlockTextureName(Names.Blocks.MECHANICAL_ROOT);
+
+		float pixel = 1F/16F;
+
+		this.setBlockName(Names.Blocks.ROTARY_SHAFT);
+		this.setBlockTextureName(Names.Blocks.ROTARY_SHAFT);
+
+		this.setBlockBounds(12*pixel/2, 12*pixel/2, 12*pixel/2, 1-12*pixel/2, 1-12*pixel/2, 1-12*pixel/2);
 	}
 
 	@Override
 	public TileEntity createNewTileEntity(World world, int metaData)
 	{
-		return new TileEntityMechanicalRoot();
+		return new TileEntityRotaryShaft();
 	}
 
 	@Override
@@ -33,7 +36,7 @@ public class BlockMechanicalRoot extends BlockWC implements ITileEntityProvider 
 	@Override
 	public int getRenderType()
 	{
-		return RenderIds.mechanicalRoot;
+		return RenderIds.rotaryShaft;
 	}
 
 	@Override
