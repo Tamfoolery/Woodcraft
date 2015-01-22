@@ -10,9 +10,6 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.util.ForgeDirection;
 import org.lwjgl.opengl.GL11;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @SideOnly(Side.CLIENT)
 public class TileEntityRendererRotaryShaft extends TileEntitySpecialRenderer {
 
@@ -37,7 +34,7 @@ public class TileEntityRendererRotaryShaft extends TileEntitySpecialRenderer {
 			this.bindTexture(Textures.Model.ROTARY_SHAFT);
 
 			// Render
-			modelRotaryShaft.render("GearBox");
+			if (!tileEntityRotaryShaft.onlyOneOpposite(tileEntityRotaryShaft.connectDirection)) modelRotaryShaft.render("GearBox");
 
 			if (tileEntityRotaryShaft.connectDirection[0] == ForgeDirection.UP)
 			{

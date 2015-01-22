@@ -27,23 +27,35 @@ public class TileEntityRotaryShaft extends TileEntityWC {
 		TileEntity east = this.worldObj.getTileEntity(xCoord+1, yCoord, zCoord);
 		TileEntity west = this.worldObj.getTileEntity(xCoord-1, yCoord, zCoord);
 
-		Boolean upConnected = (up instanceof TileEntityRotaryShaft
-				|| up instanceof TileEntityMechanicalRoot);
+		Boolean upConnected = (
+				up instanceof TileEntityRotaryShaft
+				|| up instanceof TileEntityMechanicalRoot
+		);
 
-		Boolean downConnected = (down instanceof TileEntityRotaryShaft
-				|| down instanceof TileEntityMechanicalRoot);
+		Boolean downConnected = (
+				down instanceof TileEntityRotaryShaft
+				|| down instanceof TileEntityMechanicalRoot
+		);
 
-		Boolean northConnected = (north instanceof TileEntityRotaryShaft
-				|| north instanceof TileEntityMechanicalRoot);
+		Boolean northConnected = (
+				north instanceof TileEntityRotaryShaft
+				|| north instanceof TileEntityMechanicalRoot
+		);
 
-		Boolean southConnected = (south instanceof TileEntityRotaryShaft
-				|| south instanceof TileEntityMechanicalRoot);
+		Boolean southConnected = (
+				south instanceof TileEntityRotaryShaft
+				|| south instanceof TileEntityMechanicalRoot
+		);
 
-		Boolean eastConnected = (east instanceof TileEntityRotaryShaft
-				|| east instanceof TileEntityMechanicalRoot);
+		Boolean eastConnected = (
+				east instanceof TileEntityRotaryShaft
+				|| east instanceof TileEntityMechanicalRoot
+		);
 
-		Boolean westConnected = (west instanceof TileEntityRotaryShaft
-				|| west instanceof TileEntityMechanicalRoot);
+		Boolean westConnected = (
+				west instanceof TileEntityRotaryShaft
+				|| west instanceof TileEntityMechanicalRoot
+		);
 
 		if (upConnected) connectDirection[0] = ForgeDirection.UP;
 		else connectDirection[0] = null;
@@ -57,6 +69,33 @@ public class TileEntityRotaryShaft extends TileEntityWC {
 		else connectDirection[4] = null;
 		if (westConnected) connectDirection[5] = ForgeDirection.WEST;
 		else connectDirection[5] = null;
+	}
+
+	public boolean onlyOneOpposite(ForgeDirection[] directions)
+	{
+		ForgeDirection mainDirection = null;
+		boolean isOpposite = false;
+
+		for (ForgeDirection direction : directions)
+		{
+			if (mainDirection == null && direction != null) mainDirection = direction;
+
+			if (direction != null && mainDirection != direction)
+			{
+				isOpposite = isOpposite(mainDirection, direction);
+			}
+		}
+
+		return isOpposite;
+	}
+
+	public boolean isOpposite(ForgeDirection a, ForgeDirection b)
+	{
+		if ( (a.equals(ForgeDirection.NORTH) && b.equals(ForgeDirection.SOUTH)) || (a.equals(ForgeDirection.SOUTH) && b.equals(ForgeDirection.NORTH)) ) return true;
+		if ( (a.equals(ForgeDirection.EAST) && b.equals(ForgeDirection.WEST)) || (a.equals(ForgeDirection.WEST) && b.equals(ForgeDirection.EAST)) ) return true;
+		if ( (a.equals(ForgeDirection.UP) && b.equals(ForgeDirection.DOWN)) || (a.equals(ForgeDirection.DOWN) && b.equals(ForgeDirection.UP)) ) return true;
+
+		return false;
 	}
 
 }
