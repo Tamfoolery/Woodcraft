@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0af63335-b3f8-406e-bd43-8ac763ae8ce1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/wood/textures/blocks/rotaryShaft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockRotaryShaft.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/item/ItemRendererRotaryShaft.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/model/ModelRotaryShaft.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/tileentity/TileEntityRendererRotaryShaft.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/tileentity/TileEntityRotaryShaft.java" />
-      <change type="DELETED" beforePath="E:\Minecraft Modding\1.7\Woodcraft\src\main\resources\assets\wood\models\mechanicalRoot.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockMechanicalRoot.java" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockMechanicalRoot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/proxy/ClientProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/proxy/ClientProxy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/init/ModBlocks.java" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/init/ModBlocks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/init/ModTileEntities.java" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/init/ModTileEntities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/reference/Models.java" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/reference/Models.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/reference/Names.java" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/reference/Names.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/reference/RenderIds.java" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/reference/RenderIds.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/reference/Textures.java" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/reference/Textures.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/tileentity/TileEntityRendererMechanicalRoot.java" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/tileentity/TileEntityRendererMechanicalRoot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/tileentity/TileEntityRotaryShaft.java" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/tileentity/TileEntityRotaryShaft.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Woodcraft.iws" afterPath="$PROJECT_DIR$/Woodcraft.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/wood/lang/en_US.lang" afterPath="$PROJECT_DIR$/src/main/resources/assets/wood/lang/en_US.lang" />
     </list>
     <ignored path="Woodcraft.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -124,14 +107,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TileEntityRotaryShaft.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TileEntityRotaryShaft.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/tileentity/TileEntityRotaryShaft.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="672">
-              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+            <state vertical-scroll-proportion="1.3182553" vertical-offset="96" max-vertical-offset="1088">
+              <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
               <folding>
-                <element signature="e#313#314#0" expanded="true" />
-                <element signature="e#344#345#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#357#358#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,24 +154,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TileEntityRendererRotaryShaft.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TileEntityRendererRotaryShaft.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/tileentity/TileEntityRendererRotaryShaft.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78836834" vertical-offset="248" max-vertical-offset="1232">
-              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="1232">
+              <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rotaryShaft.obj" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/wood/models/rotaryShaft.obj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="8808" max-vertical-offset="9808">
-              <caret line="607" column="37" selection-start-line="607" selection-start-column="37" selection-end-line="607" selection-end-column="37" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -236,11 +210,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/model/ModelRotaryShaft.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockRotaryShaft.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/item/ItemRendererRotaryShaft.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/tileentity/TileEntityRotaryShaft.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/wood/models/rotaryShaftUnedited.obj" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/wood/models/rotaryShaft.obj" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/tileentity/TileEntityRendererRotaryShaft.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/tileentity/TileEntityRotaryShaft.java" />
       </list>
     </option>
   </component>
@@ -1424,17 +1398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/tileentity/TileEntityRotaryShaft.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="672">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-          <folding>
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockRotaryShaft.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="768">
@@ -1446,14 +1409,6 @@
             <element signature="e#868#869#0" expanded="true" />
             <element signature="e#887#888#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/wood/models/rotaryShaft.obj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="8808" max-vertical-offset="9808">
-          <caret line="607" column="37" selection-start-line="607" selection-start-column="37" selection-end-line="607" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1482,12 +1437,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/wood/models/rotaryShaft.obj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.96581197" vertical-offset="8808" max-vertical-offset="9808">
+          <caret line="607" column="37" selection-start-line="607" selection-start-column="37" selection-end-line="607" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/tileentity/TileEntityRendererRotaryShaft.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78836834" vertical-offset="248" max-vertical-offset="1232">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="1232">
+          <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/tileentity/TileEntityRotaryShaft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3182553" vertical-offset="96" max-vertical-offset="1088">
+          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
           </folding>
         </state>
       </provider>
