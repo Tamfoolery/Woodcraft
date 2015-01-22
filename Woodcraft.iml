@@ -13,6 +13,53 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/codechicken/CodeChickenLib/1.7.10-1.1.1.110/bb6ab8569b4b2c8f2a12980370cbe1cfc493117/CodeChickenLib-1.7.10-1.1.1.110-dev.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/codechicken/CodeChickenCore/1.7.10-1.0.4.35/b7165acdf6b414123d49bde2c9a92561cc33c669/CodeChickenCore-1.7.10-1.0.4.35-dev.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/codechicken/NotEnoughItems/1.7.10-1.0.4.83/c6db6a9ab96b773d5fe58e689fe7107f1e5aab17/NotEnoughItems-1.7.10-1.0.4.83-dev.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/codechicken/ForgeMultipart/1.7.10-1.1.1.320/caa70a2d4e7a72dd75802e9afa93f04632b2aede/ForgeMultipart-1.7.10-1.1.1.320-dev.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mcp.mobius.waila/Waila/1.5.8a_1.7.10/a6c6687e9c8d01a15e8da908ed62fb2f7f68103a/Waila-1.5.8a_1.7.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mcp.mobius.waila/Waila/1.5.8a_1.7.10/20989f05c8a1fbc34847e11cd322288f2f21a64b/Waila-1.5.8a_1.7.10-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
           <root url="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.2.1230/forgeSrc-1.7.10-10.13.2.1230.jar!/" />
         </CLASSES>
         <JAVADOC />

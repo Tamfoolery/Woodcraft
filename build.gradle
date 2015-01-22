@@ -16,7 +16,12 @@ buildscript {
 }
 
 repositories {
-    maven {
+    maven { // Waila
+        name "Mobius Repo"
+        url "http://mobiusstrip.eu/maven"
+    }
+
+    maven { // NEI
         name 'CB Repo'
         url "http://chickenbones.net/maven/"
     }
@@ -34,9 +39,11 @@ minecraft {
 }
 
 dependencies {
-    compile "codechicken:CodeChickenLib:1.7.10-1.1.1.95:dev"
-    compile "codechicken:CodeChickenCore:1.7.10-1.0.2.11:dev"
-    compile "codechicken:NotEnoughItems:1.7.10-1.0.2.26:dev"
+    compile "codechicken:CodeChickenLib:1.7.10-1.1.1.110:dev"
+    compile "codechicken:CodeChickenCore:1.7.10-1.0.4.35:dev"
+    compile "codechicken:NotEnoughItems:1.7.10-1.0.4.83:dev"
+    compile "codechicken:ForgeMultipart:1.7.10-1.1.1.320:dev"
+    compile "mcp.mobius.waila:Waila:1.5.8a_1.7.10"
 }
 
 processResources {
