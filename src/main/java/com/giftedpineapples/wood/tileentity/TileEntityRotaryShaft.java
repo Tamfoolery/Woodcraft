@@ -7,6 +7,8 @@ public class TileEntityRotaryShaft extends TileEntityWC {
 
 	public ForgeDirection[] connectDirection = new ForgeDirection[6];
 
+	public Boolean upConnected, downConnected, northConnected, southConnected, eastConnected, westConnected;
+
 	public TileEntityRotaryShaft()
 	{
 		//
@@ -27,32 +29,32 @@ public class TileEntityRotaryShaft extends TileEntityWC {
 		TileEntity east = this.worldObj.getTileEntity(xCoord+1, yCoord, zCoord);
 		TileEntity west = this.worldObj.getTileEntity(xCoord-1, yCoord, zCoord);
 
-		Boolean upConnected = (
+		upConnected = (
 				up instanceof TileEntityRotaryShaft
 				|| up instanceof TileEntityMechanicalRoot
 		);
 
-		Boolean downConnected = (
+		downConnected = (
 				down instanceof TileEntityRotaryShaft
 				|| down instanceof TileEntityMechanicalRoot
 		);
 
-		Boolean northConnected = (
+		northConnected = (
 				north instanceof TileEntityRotaryShaft
 				|| north instanceof TileEntityMechanicalRoot
 		);
 
-		Boolean southConnected = (
+		southConnected = (
 				south instanceof TileEntityRotaryShaft
 				|| south instanceof TileEntityMechanicalRoot
 		);
 
-		Boolean eastConnected = (
+		eastConnected = (
 				east instanceof TileEntityRotaryShaft
 				|| east instanceof TileEntityMechanicalRoot
 		);
 
-		Boolean westConnected = (
+		westConnected = (
 				west instanceof TileEntityRotaryShaft
 				|| west instanceof TileEntityMechanicalRoot
 		);

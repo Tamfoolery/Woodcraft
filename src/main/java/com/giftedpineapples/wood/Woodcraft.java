@@ -1,10 +1,7 @@
 package com.giftedpineapples.wood;
 
 import com.giftedpineapples.wood.handler.ConfigHandler;
-import com.giftedpineapples.wood.init.ModBlocks;
-import com.giftedpineapples.wood.init.ModItems;
-import com.giftedpineapples.wood.init.ModTileEntities;
-import com.giftedpineapples.wood.init.Recipes;
+import com.giftedpineapples.wood.init.*;
 import com.giftedpineapples.wood.proxy.IProxy;
 import com.giftedpineapples.wood.reference.Reference;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -14,7 +11,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS, dependencies = "after:ForgeMultipart;after:ForgeMicroblocks")
 public class Woodcraft {
 
 	@Mod.Instance(Reference.MOD_ID)
@@ -33,6 +30,7 @@ public class Woodcraft {
 		// Register Items & Blocks
 		ModItems.init();
 		ModBlocks.init();
+//		new ModParts().init(); //http://whov.altervista.org/dealing-with-tile-entities-in-multiparts/
 	}
 
 	@Mod.EventHandler
