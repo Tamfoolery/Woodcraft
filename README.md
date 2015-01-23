@@ -32,6 +32,3 @@ Quarry:
 - Key block placed in one corner - power in, mined items out
 - The frame the quarry runs on is placed manually
 - The miner is crafted using 4 runners (planks + 2 wooden gears), 4 rope, 1 log, 1 shaft (6 planks, down each side)
-
-**Quarry proof of concept / design idea**
-![Quarry proof of concept / design idea](https://raw.githubusercontent.com/Tamfoolery/Woodcraft/master/art/QuarryProofOfConcept.PNG)

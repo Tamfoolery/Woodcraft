@@ -1,11 +1,16 @@
 package com.giftedpineapples.wood.block;
 
+import com.giftedpineapples.wood.init.ModBlocks;
 import com.giftedpineapples.wood.reference.Names;
 import com.giftedpineapples.wood.reference.RenderIds;
 import com.giftedpineapples.wood.tileentity.TileEntityMechanicalRoot;
 import com.giftedpineapples.wood.tileentity.TileEntityRotaryShaft;
 import com.giftedpineapples.wood.tileentity.TileEntityWindTurbine;
+import com.giftedpineapples.wood.utility.LogHelper;
+import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
@@ -50,7 +55,21 @@ public class BlockWindTurbine extends BlockWC implements ITileEntityProvider {
 	@Override
 	public boolean canPlaceBlockAt(World world, int x, int y, int z)
 	{
-		TileEntity blockBelow = world.getTileEntity(x, y-1, z);
+		return isBlockBelowValid(world, x, y, z);
+	}
+
+	public void onNeighborBlockChange(World world, int x, int y, int z, Block block)
+	{
+		if (!isBlockBelowValid(world, x, y, z))
+		{
+			world.setBlockToAir(x, y, z);
+			if (!world.isRemote) this.dropBlockAsItem(world, x, y, z, new ItemStack(Item.getItemFromBlock(ModBlocks.windTurbine)));
+		}
+	}
+
+	private boolean isBlockBelowValid(World world, int x, int y, int z)
+	{
+		TileEntity blockBelow = world.getTileEntity(x, y - 1, z);
 		return (blockBelow instanceof TileEntityRotaryShaft || blockBelow instanceof TileEntityMechanicalRoot);
 	}
 
