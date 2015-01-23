@@ -5,7 +5,6 @@ import com.giftedpineapples.wood.reference.RenderIds;
 import com.giftedpineapples.wood.tileentity.TileEntityRotaryShaft;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
@@ -40,11 +39,11 @@ public class BlockRotaryShaft extends BlockWC implements ITileEntityProvider {
 		}
 	}
 
-	@Override
-	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z)
-	{
-		return AxisAlignedBB.getBoundingBox((double)x + this.minX, (double)y + this.minY, (double)z + this.minZ, (double)x + this.maxX, (double)y + this.maxY, (double)z + this.maxZ);
-	}
+//	@Override
+//	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z)
+//	{
+//		return AxisAlignedBB.getBoundingBox((double)x + this.minX, (double)y + this.minY, (double)z + this.minZ, (double)x + this.maxX, (double)y + this.maxY, (double)z + this.maxZ);
+//	}
 
 	@Override
 	public TileEntity createNewTileEntity(World world, int metaData)

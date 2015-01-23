@@ -11,6 +11,7 @@ public final class Names {
 	{
 		public static final String MECHANICAL_ROOT = "mechanicalRoot";
 		public static final String ROTARY_SHAFT = "rotaryShaft";
+		public static final String WIND_TURBINE = "windTurbine";
 	}
 
 }

@@ -4,5 +4,6 @@ public class RenderIds {
 
 	public static int mechanicalRoot;
 	public static int rotaryShaft;
+	public static int windTurbine;
 
 }

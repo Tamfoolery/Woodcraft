@@ -7,7 +7,7 @@ public class TileEntityRotaryShaft extends TileEntityWC {
 
 	public ForgeDirection[] connectDirection = new ForgeDirection[6];
 
-	public Boolean upConnected, downConnected, northConnected, southConnected, eastConnected, westConnected;
+	public Boolean upConnected = false, downConnected = false, northConnected = false, southConnected = false, eastConnected = false, westConnected = false;
 
 	public TileEntityRotaryShaft()
 	{
@@ -32,6 +32,7 @@ public class TileEntityRotaryShaft extends TileEntityWC {
 		upConnected = (
 				up instanceof TileEntityRotaryShaft
 				|| up instanceof TileEntityMechanicalRoot
+				|| up instanceof TileEntityWindTurbine
 		);
 
 		downConnected = (

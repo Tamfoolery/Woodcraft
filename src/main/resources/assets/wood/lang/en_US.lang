@@ -7,3 +7,4 @@ item.wood:woodenGear.name=Wooden Gear
 # Tiles / Blocks
 tile.wood:mechanicalRoot.name=Mechanical Root
 tile.wood:rotaryShaft.name=Rotary Shaft
+tile.wood:windTurbine.name=Wind Turbine

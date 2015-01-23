@@ -13,6 +13,7 @@ public final class Textures {
 
 		public static final ResourceLocation MECHANICAL_ROOT = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + Names.Blocks.MECHANICAL_ROOT + ".png");
 		public static final ResourceLocation ROTARY_SHAFT = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + Names.Blocks.ROTARY_SHAFT + ".png");
+		public static final ResourceLocation WIND_TURBINE = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + Names.Blocks.WIND_TURBINE + ".png");
 	}
 
 }
