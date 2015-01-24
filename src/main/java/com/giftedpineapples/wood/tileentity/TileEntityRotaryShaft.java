@@ -2,16 +2,14 @@ package com.giftedpineapples.wood.tileentity;
 
 import com.giftedpineapples.wood.reference.MiscVariables;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraftforge.common.util.ForgeDirection;
 
 public class TileEntityRotaryShaft extends TileEntityWC {
 
 	public boolean isPowered = true;
 	public float rotation = 0F;
 
-	public ForgeDirection[] connectDirection = new ForgeDirection[6];
-
-	public Boolean upConnected = false, downConnected = false, northConnected = false, southConnected = false, eastConnected = false, westConnected = false;
+	// 0:up, 1:down, 2:north, 3:south, 4:east, 5:west
+	public boolean[] sidesConnected = new boolean[6];
 
 	public TileEntityRotaryShaft()
 	{
@@ -36,76 +34,45 @@ public class TileEntityRotaryShaft extends TileEntityWC {
 		TileEntity east = this.worldObj.getTileEntity(xCoord+1, yCoord, zCoord);
 		TileEntity west = this.worldObj.getTileEntity(xCoord-1, yCoord, zCoord);
 
-		upConnected = (
+		sidesConnected[0] = (
 				up instanceof TileEntityRotaryShaft
 				|| up instanceof TileEntityMechanicalRoot
 				|| up instanceof TileEntityWindTurbine
 		);
 
-		downConnected = (
+		sidesConnected[1] = (
 				down instanceof TileEntityRotaryShaft
 				|| down instanceof TileEntityMechanicalRoot
 		);
 
-		northConnected = (
+		sidesConnected[2] = (
 				north instanceof TileEntityRotaryShaft
 				|| north instanceof TileEntityMechanicalRoot
 		);
 
-		southConnected = (
+		sidesConnected[3] = (
 				south instanceof TileEntityRotaryShaft
 				|| south instanceof TileEntityMechanicalRoot
 		);
 
-		eastConnected = (
+		sidesConnected[4] = (
 				east instanceof TileEntityRotaryShaft
 				|| east instanceof TileEntityMechanicalRoot
 		);
 
-		westConnected = (
+		sidesConnected[5] = (
 				west instanceof TileEntityRotaryShaft
 				|| west instanceof TileEntityMechanicalRoot
 		);
-
-		if (upConnected) connectDirection[0] = ForgeDirection.UP;
-		else connectDirection[0] = null;
-		if (downConnected) connectDirection[1] = ForgeDirection.DOWN;
-		else connectDirection[1] = null;
-		if (northConnected) connectDirection[2] = ForgeDirection.NORTH;
-		else connectDirection[2] = null;
-		if (southConnected) connectDirection[3] = ForgeDirection.SOUTH;
-		else connectDirection[3] = null;
-		if (eastConnected) connectDirection[4] = ForgeDirection.EAST;
-		else connectDirection[4] = null;
-		if (westConnected) connectDirection[5] = ForgeDirection.WEST;
-		else connectDirection[5] = null;
 	}
 
-	public boolean onlyOneOpposite(ForgeDirection[] directions)
+	public boolean onlyOneOpposite(boolean[] directions)
 	{
-		ForgeDirection mainDirection = null;
-		boolean isOpposite = false;
+		boolean ud = (directions[0] && directions[1]) && !(directions[2] || directions[3] || directions[4] || directions[5]);
+		boolean ns = (directions[2] && directions[3]) && !(directions[0] || directions[1] || directions[4] || directions[5]);
+		boolean ew = (directions[4] && directions[5]) && !(directions[2] || directions[3] || directions[0] || directions[1]);
 
-		for (ForgeDirection direction : directions)
-		{
-			if (mainDirection == null && direction != null) mainDirection = direction;
-
-			if (direction != null && mainDirection != direction)
-			{
-				isOpposite = isOpposite(mainDirection, direction);
-			}
-		}
-
-		return isOpposite;
-	}
-
-	public boolean isOpposite(ForgeDirection a, ForgeDirection b)
-	{
-		if ( (a.equals(ForgeDirection.NORTH) && b.equals(ForgeDirection.SOUTH)) || (a.equals(ForgeDirection.SOUTH) && b.equals(ForgeDirection.NORTH)) ) return true;
-		if ( (a.equals(ForgeDirection.EAST) && b.equals(ForgeDirection.WEST)) || (a.equals(ForgeDirection.WEST) && b.equals(ForgeDirection.EAST)) ) return true;
-		if ( (a.equals(ForgeDirection.UP) && b.equals(ForgeDirection.DOWN)) || (a.equals(ForgeDirection.DOWN) && b.equals(ForgeDirection.UP)) ) return true;
-
-		return false;
+		return ud || ns || ew;
 	}
 
 }

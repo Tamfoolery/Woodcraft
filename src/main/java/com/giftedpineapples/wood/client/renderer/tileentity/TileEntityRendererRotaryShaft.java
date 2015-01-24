@@ -36,15 +36,15 @@ public class TileEntityRendererRotaryShaft extends TileEntitySpecialRenderer {
 			GL11.glTranslatef((float) x + 0.5F, (float) y + 0.0F, (float) z + 0.5F);
 
 			// Render
-			if (!tileEntityRotaryShaft.onlyOneOpposite(tileEntityRotaryShaft.connectDirection)) modelRotaryShaft.render("GearBox");
+			if (!tileEntityRotaryShaft.onlyOneOpposite(tileEntityRotaryShaft.sidesConnected)) modelRotaryShaft.render("GearBox");
 
 			if (tileEntityRotaryShaft.isPowered) GL11.glRotatef(tileEntityRotaryShaft.rotation, 0F, 1F, 0F);
 
-			if (tileEntityRotaryShaft.connectDirection[0] == ForgeDirection.UP)
+			if (tileEntityRotaryShaft.sidesConnected[0])
 			{
 				modelRotaryShaft.render("VerticalHalfTop");
 			}
-			if (tileEntityRotaryShaft.connectDirection[1] == ForgeDirection.DOWN)
+			if (tileEntityRotaryShaft.sidesConnected[1])
 			{
 				modelRotaryShaft.render("VerticalHalfBottom");
 			}
@@ -66,11 +66,11 @@ public class TileEntityRendererRotaryShaft extends TileEntitySpecialRenderer {
 				GL11.glTranslatef(-0.0F, -0.5F, -0.0F);
 			}
 
-			if (tileEntityRotaryShaft.connectDirection[2] == ForgeDirection.NORTH)
+			if (tileEntityRotaryShaft.sidesConnected[2])
 			{
 				modelRotaryShaft.render("HorizontalHalfFront");
 			}
-			if (tileEntityRotaryShaft.connectDirection[3] == ForgeDirection.SOUTH)
+			if (tileEntityRotaryShaft.sidesConnected[3])
 			{
 				modelRotaryShaft.render("HorizontalHalfBack");
 			}
@@ -92,11 +92,11 @@ public class TileEntityRendererRotaryShaft extends TileEntitySpecialRenderer {
 				GL11.glTranslatef(-0.0F, -0.5F, -0.0F);
 			}
 
-			if (tileEntityRotaryShaft.connectDirection[4] == ForgeDirection.EAST)
+			if (tileEntityRotaryShaft.sidesConnected[4])
 			{
 				modelRotaryShaft.render("HorizontalHalfRight");
 			}
-			if (tileEntityRotaryShaft.connectDirection[5] == ForgeDirection.WEST)
+			if (tileEntityRotaryShaft.sidesConnected[5])
 			{
 				modelRotaryShaft.render("HorizontalHalfLeft");
 			}

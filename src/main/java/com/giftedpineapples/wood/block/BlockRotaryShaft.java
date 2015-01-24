@@ -28,12 +28,12 @@ public class BlockRotaryShaft extends BlockWC implements ITileEntityProvider {
 
 		if (tileEntityRotaryShaft != null)
 		{
-			float minX = 12 * pixel / 2 - (tileEntityRotaryShaft.westConnected ? (12 * pixel / 2):0);
-			float minY = 12 * pixel / 2 - (tileEntityRotaryShaft.downConnected ? (12 * pixel / 2):0);
-			float minZ = 12 * pixel / 2 - (tileEntityRotaryShaft.southConnected ? (12 * pixel / 2):0);
-			float maxX = 1 - 12 * pixel / 2 + (tileEntityRotaryShaft.eastConnected ? (12 * pixel / 2):0);
-			float maxY = 1 - 12 * pixel / 2 + (tileEntityRotaryShaft.upConnected ? (12 * pixel / 2):0);
-			float maxZ = 1 - 12 * pixel / 2 + (tileEntityRotaryShaft.northConnected ? (12 * pixel / 2):0);
+			float minX = 12 * pixel / 2 - (tileEntityRotaryShaft.sidesConnected[5] ? (12 * pixel / 2):0);
+			float minY = 12 * pixel / 2 - (tileEntityRotaryShaft.sidesConnected[1] ? (12 * pixel / 2):0);
+			float minZ = 12 * pixel / 2 - (tileEntityRotaryShaft.sidesConnected[3] ? (12 * pixel / 2):0);
+			float maxX = 1 - 12 * pixel / 2 + (tileEntityRotaryShaft.sidesConnected[4] ? (12 * pixel / 2):0);
+			float maxY = 1 - 12 * pixel / 2 + (tileEntityRotaryShaft.sidesConnected[0] ? (12 * pixel / 2):0);
+			float maxZ = 1 - 12 * pixel / 2 + (tileEntityRotaryShaft.sidesConnected[2] ? (12 * pixel / 2):0);
 
 			this.setBlockBounds(minX, minY, minZ, maxX, maxY, maxZ);
 		}
