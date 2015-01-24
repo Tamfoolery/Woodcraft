@@ -1,6 +1,7 @@
 package com.giftedpineapples.wood.client.renderer.tileentity;
 
 import com.giftedpineapples.wood.client.renderer.model.ModelWindTurbine;
+import com.giftedpineapples.wood.reference.MiscVariables;
 import com.giftedpineapples.wood.reference.Textures;
 import com.giftedpineapples.wood.tileentity.TileEntityWindTurbine;
 import cpw.mods.fml.relauncher.Side;
@@ -19,14 +20,14 @@ public class TileEntityRendererWindTurbine extends TileEntitySpecialRenderer {
 	{
 		if (tileEntity instanceof TileEntityWindTurbine)
 		{
-			TileEntityWindTurbine tileEntityWindTurbine = (TileEntityWindTurbine) tileEntity;
+//			TileEntityWindTurbine tileEntityWindTurbine = (TileEntityWindTurbine) tileEntity;
 
 			GL11.glPushMatrix();
 
 			// Scale, Translate, Rotate
 			GL11.glScalef(1.0F, 1.0F, 1.0F);
 			GL11.glTranslatef((float) x + 0.5F, (float) y + 0.0F, (float) z + 0.5F);
-			GL11.glRotatef(tileEntityWindTurbine.rotation, 0F, 1F, 0F);
+			GL11.glRotatef(MiscVariables.shaftRotation, 0F, 1F, 0F);
 
 			// Bind Texture
 			this.bindTexture(Textures.Model.WIND_TURBINE);

@@ -38,7 +38,7 @@ public class TileEntityRendererRotaryShaft extends TileEntitySpecialRenderer {
 			// Render
 			if (!tileEntityRotaryShaft.onlyOneOpposite(tileEntityRotaryShaft.sidesConnected)) modelRotaryShaft.render("GearBox");
 
-			if (tileEntityRotaryShaft.isPowered) GL11.glRotatef(tileEntityRotaryShaft.rotation, 0F, 1F, 0F);
+			if (tileEntityRotaryShaft.isPowered) GL11.glRotatef(MiscVariables.shaftRotation, 0F, 1F, 0F);
 
 			if (tileEntityRotaryShaft.sidesConnected[0])
 			{
@@ -62,7 +62,7 @@ public class TileEntityRendererRotaryShaft extends TileEntitySpecialRenderer {
 			if (tileEntityRotaryShaft.isPowered)
 			{
 				GL11.glTranslatef(0.0F, 0.5F, 0.0F);
-				GL11.glRotatef(tileEntityRotaryShaft.rotation, 0F, 0F, 1F);
+				GL11.glRotatef(MiscVariables.shaftRotation, 0F, 0F, 1F);
 				GL11.glTranslatef(-0.0F, -0.5F, -0.0F);
 			}
 
@@ -88,7 +88,7 @@ public class TileEntityRendererRotaryShaft extends TileEntitySpecialRenderer {
 			if (tileEntityRotaryShaft.isPowered)
 			{
 				GL11.glTranslatef(0.0F, 0.5F, 0.0F);
-				GL11.glRotatef(tileEntityRotaryShaft.rotation, 1F, 0F, 0F);
+				GL11.glRotatef(MiscVariables.shaftRotation, 1F, 0F, 0F);
 				GL11.glTranslatef(-0.0F, -0.5F, -0.0F);
 			}
 

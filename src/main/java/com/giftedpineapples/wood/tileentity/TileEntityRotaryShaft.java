@@ -1,12 +1,10 @@
 package com.giftedpineapples.wood.tileentity;
 
-import com.giftedpineapples.wood.reference.MiscVariables;
 import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityRotaryShaft extends TileEntityWC {
 
 	public boolean isPowered = true;
-	public float rotation = 0F;
 
 	// 0:up, 1:down, 2:north, 3:south, 4:east, 5:west
 	public boolean[] sidesConnected = new boolean[6];
@@ -20,9 +18,6 @@ public class TileEntityRotaryShaft extends TileEntityWC {
 	public void updateEntity()
 	{
 		this.updateConnectionsToRotaryShafts();
-
-		if (rotation >= 360F) rotation = MiscVariables.baseShaftAnimationSpeed;
-		else rotation += MiscVariables.baseShaftAnimationSpeed;
 	}
 
 	public void updateConnectionsToRotaryShafts()
