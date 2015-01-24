@@ -22,6 +22,7 @@ public class BlockRotaryShaft extends BlockWC implements ITileEntityProvider {
 		this.setBlockBounds(12*pixel/2, 12*pixel/2, 12*pixel/2, 1-12*pixel/2, 1-12*pixel/2, 1-12*pixel/2);
 	}
 
+	@Override
 	public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z)
 	{
 		TileEntityRotaryShaft tileEntityRotaryShaft = (TileEntityRotaryShaft) world.getTileEntity(x, y, z);

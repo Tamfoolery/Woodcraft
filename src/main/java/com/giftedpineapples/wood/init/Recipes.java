@@ -13,6 +13,7 @@ public class Recipes {
 
 		// Block Recipes
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.mechanicalRoot), "glg", "l l", "glg", 'g', "gearWood", 'l', "logWood"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.rotaryShaft, 2), "s", "p", "s", 's', "stickWood", 'p', "plankWood"));
 	}
 
 }

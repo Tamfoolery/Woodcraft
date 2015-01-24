@@ -50,7 +50,7 @@ public class PartRotaryShaft extends PartWC {
 	@Override
 	public void renderDynamic(Vector3 pos, float frame, int pass)
 	{
-		tileEntityRendererRotaryShaft.renderTileEntityAt(tile(), pos.x, pos.y, pos.z, 0);
+		tileEntityRendererRotaryShaft.renderTileEntityAt(tile(), pos.x, pos.y, pos.z, frame);
 	}
 
 }
