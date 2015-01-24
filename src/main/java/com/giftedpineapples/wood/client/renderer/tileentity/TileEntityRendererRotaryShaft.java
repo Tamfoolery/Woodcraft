@@ -1,8 +1,10 @@
 package com.giftedpineapples.wood.client.renderer.tileentity;
 
 import com.giftedpineapples.wood.client.renderer.model.ModelRotaryShaft;
+import com.giftedpineapples.wood.reference.MiscVariables;
 import com.giftedpineapples.wood.reference.Textures;
 import com.giftedpineapples.wood.tileentity.TileEntityRotaryShaft;
+import com.giftedpineapples.wood.utility.LogHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
@@ -22,19 +24,21 @@ public class TileEntityRendererRotaryShaft extends TileEntitySpecialRenderer {
 		{
 			TileEntityRotaryShaft tileEntityRotaryShaft = (TileEntityRotaryShaft) tileEntity;
 
-			GL11.glPushMatrix();
-
-			// Scale, Translate, Rotate
-			GL11.glScalef(1.0F, 1.0F, 1.0F);
-			GL11.glTranslatef((float) x + 0.5F, (float) y + 0.0F, (float) z + 0.5F);
-			GL11.glRotatef(0F, 0F, 0F, 0F);
-			GL11.glRotatef(0F, 1F, 0F, 0F);
-
 			// Bind Texture
 			this.bindTexture(Textures.Model.ROTARY_SHAFT);
 
+			/**
+			 * Render Gearbox & Vertical (Y) rotary shaft
+			 */
+			GL11.glPushMatrix();
+
+			// Scale, Translate, Rotate
+			GL11.glTranslatef((float) x + 0.5F, (float) y + 0.0F, (float) z + 0.5F);
+
 			// Render
 			if (!tileEntityRotaryShaft.onlyOneOpposite(tileEntityRotaryShaft.connectDirection)) modelRotaryShaft.render("GearBox");
+
+			if (tileEntityRotaryShaft.isPowered) GL11.glRotatef(tileEntityRotaryShaft.rotation, 0F, 1F, 0F);
 
 			if (tileEntityRotaryShaft.connectDirection[0] == ForgeDirection.UP)
 			{
@@ -44,6 +48,24 @@ public class TileEntityRendererRotaryShaft extends TileEntitySpecialRenderer {
 			{
 				modelRotaryShaft.render("VerticalHalfBottom");
 			}
+
+			GL11.glPopMatrix();
+
+			/**
+			 * Render Horizontal (Z) rotary shaft
+			 */
+			GL11.glPushMatrix();
+
+			// Scale, Translate, Rotate
+			GL11.glTranslatef((float) x + 0.5F, (float) y + 0.0F, (float) z + 0.5F);
+
+			if (tileEntityRotaryShaft.isPowered)
+			{
+				GL11.glTranslatef(0.0F, 0.5F, 0.0F);
+				GL11.glRotatef(tileEntityRotaryShaft.rotation, 0F, 0F, 1F);
+				GL11.glTranslatef(-0.0F, -0.5F, -0.0F);
+			}
+
 			if (tileEntityRotaryShaft.connectDirection[2] == ForgeDirection.NORTH)
 			{
 				modelRotaryShaft.render("HorizontalHalfFront");
@@ -52,6 +74,24 @@ public class TileEntityRendererRotaryShaft extends TileEntitySpecialRenderer {
 			{
 				modelRotaryShaft.render("HorizontalHalfBack");
 			}
+
+			GL11.glPopMatrix();
+
+			/**
+			 * Render Horizontal (X) rotary shaft
+			 */
+			GL11.glPushMatrix();
+
+			// Scale, Translate, Rotate
+			GL11.glTranslatef((float) x + 0.5F, (float) y + 0.0F, (float) z + 0.5F);
+
+			if (tileEntityRotaryShaft.isPowered)
+			{
+				GL11.glTranslatef(0.0F, 0.5F, 0.0F);
+				GL11.glRotatef(tileEntityRotaryShaft.rotation, 1F, 0F, 0F);
+				GL11.glTranslatef(-0.0F, -0.5F, -0.0F);
+			}
+
 			if (tileEntityRotaryShaft.connectDirection[4] == ForgeDirection.EAST)
 			{
 				modelRotaryShaft.render("HorizontalHalfRight");

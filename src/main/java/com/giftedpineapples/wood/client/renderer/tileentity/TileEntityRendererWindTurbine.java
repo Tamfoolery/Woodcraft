@@ -19,15 +19,14 @@ public class TileEntityRendererWindTurbine extends TileEntitySpecialRenderer {
 	{
 		if (tileEntity instanceof TileEntityWindTurbine)
 		{
-//			TileEntityWindTurbine tileEntityRotaryShaft = (TileEntityWindTurbine) tileEntity;
+			TileEntityWindTurbine tileEntityWindTurbine = (TileEntityWindTurbine) tileEntity;
 
 			GL11.glPushMatrix();
 
 			// Scale, Translate, Rotate
 			GL11.glScalef(1.0F, 1.0F, 1.0F);
 			GL11.glTranslatef((float) x + 0.5F, (float) y + 0.0F, (float) z + 0.5F);
-			GL11.glRotatef(0F, 0F, 0F, 0F);
-			GL11.glRotatef(0F, 1F, 0F, 0F);
+			GL11.glRotatef(tileEntityWindTurbine.rotation, 0F, 1F, 0F);
 
 			// Bind Texture
 			this.bindTexture(Textures.Model.WIND_TURBINE);

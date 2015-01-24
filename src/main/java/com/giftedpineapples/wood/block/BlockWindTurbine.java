@@ -6,7 +6,6 @@ import com.giftedpineapples.wood.reference.RenderIds;
 import com.giftedpineapples.wood.tileentity.TileEntityMechanicalRoot;
 import com.giftedpineapples.wood.tileentity.TileEntityRotaryShaft;
 import com.giftedpineapples.wood.tileentity.TileEntityWindTurbine;
-import com.giftedpineapples.wood.utility.LogHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.item.Item;

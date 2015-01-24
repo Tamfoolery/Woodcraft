@@ -8,21 +8,11 @@ import net.minecraftforge.client.model.IModelCustom;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
-public class ModelRotaryShaft {
-
-	private IModelCustom modelRotaryShaft;
+public class ModelRotaryShaft extends ModelWC {
 
 	public ModelRotaryShaft()
 	{
-		modelRotaryShaft = AdvancedModelLoader.loadModel(Models.ROTARY_SHAFT);
-	}
-
-	public void render(String ... renderGroup)
-	{
-		for (String s : renderGroup)
-		{
-			modelRotaryShaft.renderPart(s);
-		}
+		modelCustom = AdvancedModelLoader.loadModel(Models.ROTARY_SHAFT);
 	}
 
 }

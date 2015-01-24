@@ -1,9 +1,13 @@
 package com.giftedpineapples.wood.tileentity;
 
+import com.giftedpineapples.wood.reference.MiscVariables;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.util.ForgeDirection;
 
 public class TileEntityRotaryShaft extends TileEntityWC {
+
+	public boolean isPowered = true;
+	public float rotation = 0F;
 
 	public ForgeDirection[] connectDirection = new ForgeDirection[6];
 
@@ -18,6 +22,9 @@ public class TileEntityRotaryShaft extends TileEntityWC {
 	public void updateEntity()
 	{
 		this.updateConnectionsToRotaryShafts();
+
+		if (rotation >= 360F) rotation = MiscVariables.baseShaftAnimationSpeed;
+		else rotation += MiscVariables.baseShaftAnimationSpeed;
 	}
 
 	public void updateConnectionsToRotaryShafts()

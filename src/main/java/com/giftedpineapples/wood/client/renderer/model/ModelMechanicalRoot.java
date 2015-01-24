@@ -7,18 +7,11 @@ import net.minecraftforge.client.model.AdvancedModelLoader;
 import net.minecraftforge.client.model.IModelCustom;
 
 @SideOnly(Side.CLIENT)
-public class ModelMechanicalRoot {
-
-	private IModelCustom modelMechanicalRoot;
+public class ModelMechanicalRoot extends ModelWC {
 
 	public ModelMechanicalRoot()
 	{
-		modelMechanicalRoot = AdvancedModelLoader.loadModel(Models.MECHANICAL_ROOT);
-	}
-
-	public void render()
-	{
-		modelMechanicalRoot.renderAll();
+		modelCustom = AdvancedModelLoader.loadModel(Models.MECHANICAL_ROOT);
 	}
 
 }

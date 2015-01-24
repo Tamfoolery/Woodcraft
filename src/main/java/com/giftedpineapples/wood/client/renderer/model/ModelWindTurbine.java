@@ -7,25 +7,11 @@ import net.minecraftforge.client.model.AdvancedModelLoader;
 import net.minecraftforge.client.model.IModelCustom;
 
 @SideOnly(Side.CLIENT)
-public class ModelWindTurbine {
-
-	private IModelCustom modelWindTurbine;
+public class ModelWindTurbine extends ModelWC {
 
 	public ModelWindTurbine()
 	{
-		modelWindTurbine = AdvancedModelLoader.loadModel(Models.WIND_TURBINE);
+		modelCustom = AdvancedModelLoader.loadModel(Models.WIND_TURBINE);
 	}
 
-	public void render()
-	{
-		modelWindTurbine.renderAll();
-	}
-
-	public void render(String ... renderGroup)
-	{
-		for (String s : renderGroup)
-		{
-			modelWindTurbine.renderPart(s);
-		}
-	}
 }
