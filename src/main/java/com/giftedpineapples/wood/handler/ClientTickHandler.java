@@ -3,12 +3,15 @@ package com.giftedpineapples.wood.handler;
 import com.giftedpineapples.wood.reference.MiscVariables;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;
 
 public class ClientTickHandler {
 
 	// Called when the client ticks. (20 ticks/sec)
 	@SubscribeEvent
+	@SideOnly(Side.CLIENT)
 	public void onClientTick(TickEvent.ClientTickEvent event)
 	{
 		if (!Minecraft.getMinecraft().isGamePaused())
