@@ -69,7 +69,8 @@ public class BlockWindTurbine extends BlockWC implements ITileEntityProvider {
 	private boolean isBlockBelowValid(World world, int x, int y, int z)
 	{
 		TileEntity blockBelow = world.getTileEntity(x, y - 1, z);
-		return (blockBelow instanceof TileEntityRotaryShaft || blockBelow instanceof TileEntityMechanicalRoot);
+		return (blockBelow instanceof TileEntityRotaryShaft
+				|| blockBelow instanceof TileEntityMechanicalRoot);
 	}
 
 }

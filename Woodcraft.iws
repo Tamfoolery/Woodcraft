@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0af63335-b3f8-406e-bd43-8ac763ae8ce1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/handler/ClientTickHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/handler/ClientTickHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockRotaryShaft.java" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockRotaryShaft.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockWindTurbine.java" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockWindTurbine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/init/ModBlocks.java" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/init/ModBlocks.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/init/Recipes.java" afterPath="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/init/Recipes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Woodcraft.iws" afterPath="$PROJECT_DIR$/Woodcraft.iws" />
     </list>
     <ignored path="Woodcraft.iws" />
@@ -96,11 +99,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientTickHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ClientTickHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/handler/ClientTickHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82714057" vertical-offset="0" max-vertical-offset="864">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864">
               <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlockWindTurbine.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockWindTurbine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7156704" vertical-offset="453" max-vertical-offset="1072">
+              <caret line="71" column="59" selection-start-line="71" selection-start-column="59" selection-end-line="71" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,7 +126,7 @@
       <file leaf-file-name="TileEntityWindTurbine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/tileentity/TileEntityWindTurbine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="464">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="464">
               <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -120,27 +135,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TileEntityRendererWindTurbine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/tileentity/TileEntityRendererWindTurbine.java">
+      <file leaf-file-name="BlockRotaryShaft.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockRotaryShaft.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="149" max-vertical-offset="768">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PartRotaryShaft.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/part/PartRotaryShaft.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="608" max-vertical-offset="768">
-              <caret line="52" column="91" selection-start-line="52" selection-start-column="91" selection-end-line="52" selection-end-column="91" />
-              <folding>
-                <element signature="e#900#901#0" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="88" max-vertical-offset="1024">
+              <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,21 +148,8 @@
       <file leaf-file-name="TileEntityRotaryShaft.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/tileentity/TileEntityRotaryShaft.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="1264">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding>
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlockRotaryShaft.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockRotaryShaft.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="976">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1216">
+              <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -171,9 +158,8 @@
       <file leaf-file-name="TileEntityRendererRotaryShaft.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/tileentity/TileEntityRendererRotaryShaft.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1280" max-vertical-offset="1664">
-              <caret line="64" column="58" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
-              <caret line="90" column="58" selection-start-line="90" selection-start-column="58" selection-end-line="90" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1664">
+              <caret line="38" column="74" selection-start-line="38" selection-start-column="74" selection-end-line="38" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -210,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/reference/Names.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/wood/lang/en_US.lang" />
-        <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/init/ModBlocks.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/wood/models/windTurbine.obj" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/reference/Models.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/reference/RenderIds.java" />
@@ -222,22 +207,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/model/ModelWC.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/model/ModelRotaryShaft.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/model/ModelMechanicalRoot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockWindTurbine.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/reference/MiscVariables.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/ClientTickHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/handler/ClientRenderTickHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/tileentity/TileEntityWC.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/part/PartWC.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/part/PartRotaryShaft.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockRotaryShaft.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/Woodcraft.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/init/Recipes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/proxy/ClientProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/tileentity/TileEntityRendererRotaryShaft.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/tileentity/TileEntityWindTurbine.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/tileentity/TileEntityRendererWindTurbine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/tileentity/TileEntityRotaryShaft.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/handler/ClientTickHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockRotaryShaft.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/init/ModBlocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/init/Recipes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/tileentity/TileEntityRotaryShaft.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockWindTurbine.java" />
       </list>
     </option>
   </component>
@@ -701,7 +687,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -722,6 +707,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -962,7 +948,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -974,7 +960,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32883817" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32883817" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18230277" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1018,35 +1004,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/reference/Textures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23931624" vertical-offset="0" max-vertical-offset="936">
-          <caret line="15" column="153" selection-start-line="15" selection-start-column="153" selection-end-line="15" selection-end-column="153" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/item/ItemRendererMechanicalRoot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.10339257" vertical-offset="144" max-vertical-offset="1136">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/item/ItemRendererRotaryShaft.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.017770598" vertical-offset="139" max-vertical-offset="1136">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8370119" vertical-offset="35" max-vertical-offset="624">
           <caret line="33" column="115" selection-start-line="33" selection-start-column="115" selection-end-line="33" selection-end-column="115" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockWC.java">
@@ -1102,13 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="256">
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockWindTurbine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1056">
-          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -1294,25 +1252,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/init/Recipes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/Woodcraft.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
           <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockRotaryShaft.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="976">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1334,25 +1277,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/part/PartRotaryShaft.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.2.1230/forgeSrc-1.7.10-10.13.2.1230-sources.jar!/cpw/mods/fml/common/gameevent/TickEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="768">
-          <caret line="52" column="91" selection-start-line="52" selection-start-column="91" selection-end-line="52" selection-end-column="91" />
+        <state vertical-scroll-proportion="0.7948718" vertical-offset="56" max-vertical-offset="992">
+          <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/handler/ClientTickHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
           <folding>
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/tileentity/TileEntityRotaryShaft.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/tileentity/TileEntityRendererWindTurbine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1264">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3931624" vertical-offset="0" max-vertical-offset="936">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/part/PartRotaryShaft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5982906" vertical-offset="0" max-vertical-offset="936">
+          <caret line="52" column="91" selection-start-line="52" selection-start-column="91" selection-end-line="52" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/tileentity/TileEntityRendererRotaryShaft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1664">
+          <caret line="38" column="74" selection-start-line="38" selection-start-column="74" selection-end-line="38" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/item/ItemWoodenGear.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06837607" vertical-offset="0" max-vertical-offset="936">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/init/ModItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18803419" vertical-offset="0" max-vertical-offset="936">
+          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="18" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/init/Recipes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36187398" vertical-offset="0" max-vertical-offset="619">
+          <caret line="16" column="127" selection-start-line="16" selection-start-column="127" selection-end-line="16" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/init/ModBlocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38772213" vertical-offset="0" max-vertical-offset="619">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1366,36 +1362,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/tileentity/TileEntityRendererWindTurbine.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockRotaryShaft.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="149" max-vertical-offset="768">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/client/renderer/tileentity/TileEntityRendererRotaryShaft.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1664">
-          <caret line="64" column="58" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
-          <caret line="90" column="58" selection-start-line="90" selection-start-column="58" selection-end-line="90" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="88" max-vertical-offset="1024">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.2.1230/forgeSrc-1.7.10-10.13.2.1230-sources.jar!/cpw/mods/fml/common/gameevent/TickEvent.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/tileentity/TileEntityRotaryShaft.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7948718" vertical-offset="56" max-vertical-offset="992">
-          <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="1216">
+          <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/handler/ClientTickHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/giftedpineapples/wood/block/BlockWindTurbine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82714057" vertical-offset="0" max-vertical-offset="864">
-          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.7156704" vertical-offset="453" max-vertical-offset="1072">
+          <caret line="71" column="59" selection-start-line="71" selection-start-column="59" selection-end-line="71" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

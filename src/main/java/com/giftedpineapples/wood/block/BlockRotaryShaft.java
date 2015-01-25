@@ -19,9 +19,12 @@ public class BlockRotaryShaft extends BlockWC implements ITileEntityProvider {
 		this.setBlockName(Names.Blocks.ROTARY_SHAFT);
 		this.setBlockTextureName(Names.Blocks.ROTARY_SHAFT);
 
+		// Default blocks bounds match gearbox size
 		this.setBlockBounds(12*pixel/2, 12*pixel/2, 12*pixel/2, 1-12*pixel/2, 1-12*pixel/2, 1-12*pixel/2);
 	}
 
+	// Update block bounds depending on what sides of the shaft are connected to things
+	// TODO: Replace with multi/micro/whateveritis-part
 	@Override
 	public void setBlockBoundsBasedOnState(IBlockAccess world, int x, int y, int z)
 	{
