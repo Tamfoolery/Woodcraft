@@ -6,6 +6,8 @@ import net.minecraftforge.common.util.ForgeDirection;
 
 public class TileEntityWC extends TileEntity {
 
+	public boolean emitsKP = false;
+	public int power;
 	protected ForgeDirection orientation;
 	protected byte state;
 

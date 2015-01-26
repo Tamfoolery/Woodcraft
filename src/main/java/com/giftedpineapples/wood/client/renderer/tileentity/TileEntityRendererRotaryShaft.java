@@ -4,12 +4,10 @@ import com.giftedpineapples.wood.client.renderer.model.ModelRotaryShaft;
 import com.giftedpineapples.wood.reference.MiscVariables;
 import com.giftedpineapples.wood.reference.Textures;
 import com.giftedpineapples.wood.tileentity.TileEntityRotaryShaft;
-import com.giftedpineapples.wood.utility.LogHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraftforge.common.util.ForgeDirection;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)

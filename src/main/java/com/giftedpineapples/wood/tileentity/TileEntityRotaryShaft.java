@@ -2,13 +2,18 @@ package com.giftedpineapples.wood.tileentity;
 
 import net.minecraft.tileentity.TileEntity;
 
+import java.util.ArrayList;
+
 public class TileEntityRotaryShaft extends TileEntityWC {
 
 	public int power = 0;
 	public boolean isPowered = false;
 
+	private ArrayList energySourcesConnected = new ArrayList();
+
 	// 0:up, 1:down, 2:north, 3:south, 4:east, 5:west
 	public boolean[] sidesConnected = new boolean[6];
+	private boolean[] sidesInputtingPower = new boolean[6];
 
 	private TileEntity up, down, north, south, east, west;
 
@@ -65,9 +70,63 @@ public class TileEntityRotaryShaft extends TileEntityWC {
 		);
 	}
 
+	public void onNeighborBlockChange()
+	{
+		power = 0;
+		isPowered = false;
+		sidesInputtingPower = new boolean[6];
+	}
+
 	private void updatePower()
 	{
-		//
+		for (int i = 0; i < sidesConnected.length; i++)
+		{
+			TileEntityWC tileEntity;
+			switch (i)
+			{
+				case 0:
+					tileEntity = (TileEntityWC) up;
+					break;
+				case 1:
+					tileEntity = (TileEntityWC) down;
+					break;
+				case 2:
+					tileEntity = (TileEntityWC) north;
+					break;
+				case 3:
+					tileEntity = (TileEntityWC) south;
+					break;
+				case 4:
+					tileEntity = (TileEntityWC) east;
+					break;
+				case 5:
+					tileEntity = (TileEntityWC) west;
+					break;
+				default:
+					tileEntity = null;
+			}
+
+			if (tileEntity != null)
+			{
+				if (tileEntity.emitsKP)
+				{
+					if (!sidesInputtingPower[i])
+					{
+						power += tileEntity.power;
+						isPowered = true;
+						sidesInputtingPower[i] = true;
+					}
+				}
+				else
+				{
+					sidesInputtingPower[i] = false;
+				}
+			}
+			else
+			{
+				sidesInputtingPower[i] = false;
+			}
+		}
 	}
 
 	public boolean onlyOneOpposite(boolean[] directions)

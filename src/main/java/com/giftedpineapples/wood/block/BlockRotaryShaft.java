@@ -3,6 +3,8 @@ package com.giftedpineapples.wood.block;
 import com.giftedpineapples.wood.reference.Names;
 import com.giftedpineapples.wood.reference.RenderIds;
 import com.giftedpineapples.wood.tileentity.TileEntityRotaryShaft;
+import com.giftedpineapples.wood.utility.Log;
+import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.IBlockAccess;
@@ -41,6 +43,13 @@ public class BlockRotaryShaft extends BlockWC implements ITileEntityProvider {
 
 			this.setBlockBounds(minX, minY, minZ, maxX, maxY, maxZ);
 		}
+	}
+
+	@Override
+	public void onNeighborBlockChange(World world, int x, int y, int z, Block block)
+	{
+		TileEntityRotaryShaft tileEntity = (TileEntityRotaryShaft) world.getTileEntity(x, y, z);
+		tileEntity.onNeighborBlockChange();
 	}
 
 //	@Override
