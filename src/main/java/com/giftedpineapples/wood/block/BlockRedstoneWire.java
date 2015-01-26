@@ -107,84 +107,84 @@
 //
 //	private void func_150175_a(World world, int x1, int y1, int z1, int x2, int y2, int z2)
 //	{
-//		int k1 = world.getBlockMetadata(x1, y1, z1);
-//		byte b0 = 0;
-//		int i3 = this.func_150178_a(world, x2, y2, z2, b0);
+//		int thisPower = world.getBlockMetadata(x1, y1, z1);
+//		byte initialPower = 0;
+//		int power = this.getBlockPower(world, x2, y2, z2, initialPower);
 //		this.canProvidePower = false;
-//		int l1 = world.getStrongestIndirectPower(x1, y1, z1);
+//		int strongestIndirectPower = world.getStrongestIndirectPower(x1, y1, z1);
 //		this.canProvidePower = true;
 //
-//		if (l1 > 0 && l1 > i3 - 1)
+//		if (strongestIndirectPower > 0 && strongestIndirectPower > power - 1)
 //		{
-//			i3 = l1;
+//			power = strongestIndirectPower;
 //		}
 //
-//		int i2 = 0;
+//		int currentPower = 0;
 //
-//		for (int j2 = 0; j2 < 4; ++j2)
+//		for (int i = 0; i < 4; ++i)
 //		{
-//			int k2 = x1;
-//			int l2 = z1;
+//			int x = x1;
+//			int z = z1;
 //
-//			if (j2 == 0)
+//			if (i == 0)
 //			{
-//				k2 = x1 - 1;
+//				x = x1 - 1;
 //			}
 //
-//			if (j2 == 1)
+//			if (i == 1)
 //			{
-//				++k2;
+//				++x;
 //			}
 //
-//			if (j2 == 2)
+//			if (i == 2)
 //			{
-//				l2 = z1 - 1;
+//				z = z1 - 1;
 //			}
 //
-//			if (j2 == 3)
+//			if (i == 3)
 //			{
-//				++l2;
+//				++z;
 //			}
 //
-//			if (k2 != x2 || l2 != z2)
+//			if (x != x2 || z != z2)
 //			{
-//				i2 = this.func_150178_a(world, k2, y1, l2, i2);
+//				currentPower = this.getBlockPower(world, x, y1, z, currentPower);
 //			}
 //
-//			if (world.getBlock(k2, y1, l2).isNormalCube() && !world.getBlock(x1, y1 + 1, z1).isNormalCube())
+//			if (world.getBlock(x, y1, z).isNormalCube() && !world.getBlock(x1, y1 + 1, z1).isNormalCube())
 //			{
-//				if ((k2 != x2 || l2 != z2) && y1 >= y2)
+//				if ((x != x2 || z != z2) && y1 >= y2)
 //				{
-//					i2 = this.func_150178_a(world, k2, y1 + 1, l2, i2);
+//					currentPower = this.getBlockPower(world, x, y1 + 1, z, currentPower);
 //				}
 //			}
-//			else if (!world.getBlock(k2, y1, l2).isNormalCube() && (k2 != x2 || l2 != z2) && y1 <= y2)
+//			else if (!world.getBlock(x, y1, z).isNormalCube() && (x != x2 || z != z2) && y1 <= y2)
 //			{
-//				i2 = this.func_150178_a(world, k2, y1 - 1, l2, i2);
+//				currentPower = this.getBlockPower(world, x, y1 - 1, z, currentPower);
 //			}
 //		}
 //
-//		if (i2 > i3)
+//		if (currentPower > power)
 //		{
-//			i3 = i2 - 1;
+//			power = currentPower - 1;
 //		}
-//		else if (i3 > 0)
+//		else if (power > 0)
 //		{
-//			--i3;
+//			--power;
 //		}
 //		else
 //		{
-//			i3 = 0;
+//			power = 0;
 //		}
 //
-//		if (l1 > i3 - 1)
+//		if (strongestIndirectPower > power - 1)
 //		{
-//			i3 = l1;
+//			power = strongestIndirectPower;
 //		}
 //
-//		if (k1 != i3)
+//		if (thisPower != power)
 //		{
-//			world.setBlockMetadataWithNotify(x1, y1, z1, i3, 2);
+//			world.setBlockMetadataWithNotify(x1, y1, z1, power, 2);
 //			this.chunkPositions.add(new ChunkPosition(x1, y1, z1));
 //			this.chunkPositions.add(new ChunkPosition(x1 - 1, y1, z1));
 //			this.chunkPositions.add(new ChunkPosition(x1 + 1, y1, z1));
@@ -320,16 +320,16 @@
 //		}
 //	}
 //
-//	private int func_150178_a(World p_150178_1_, int p_150178_2_, int p_150178_3_, int p_150178_4_, int p_150178_5_)
+//	private int getBlockPower(World world, int x, int y, int z, int b)
 //	{
-//		if (p_150178_1_.getBlock(p_150178_2_, p_150178_3_, p_150178_4_) != this)
+//		if (world.getBlock(x, y, z) != this)
 //		{
-//			return p_150178_5_;
+//			return b;
 //		}
 //		else
 //		{
-//			int i1 = p_150178_1_.getBlockMetadata(p_150178_2_, p_150178_3_, p_150178_4_);
-//			return i1 > p_150178_5_ ? i1 : p_150178_5_;
+//			int blockMeta = world.getBlockMetadata(x, y, z);
+//			return blockMeta > b ? blockMeta : b;
 //		}
 //	}
 //

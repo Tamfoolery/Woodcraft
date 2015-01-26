@@ -45,13 +45,6 @@ public class BlockRotaryShaft extends BlockWC implements ITileEntityProvider {
 		}
 	}
 
-	@Override
-	public void onNeighborBlockChange(World world, int x, int y, int z, Block block)
-	{
-		TileEntityRotaryShaft tileEntity = (TileEntityRotaryShaft) world.getTileEntity(x, y, z);
-		tileEntity.onNeighborBlockChange();
-	}
-
 //	@Override
 //	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z)
 //	{

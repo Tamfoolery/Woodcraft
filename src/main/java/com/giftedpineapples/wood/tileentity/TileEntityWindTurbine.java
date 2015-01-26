@@ -10,6 +10,7 @@ public class TileEntityWindTurbine extends TileEntityWC {
 	{
 		emitsKP = true;
 		power = 1000;
+		isPowered = true;
 	}
 
 	@Override
