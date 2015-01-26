@@ -4,10 +4,13 @@ import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityRotaryShaft extends TileEntityWC {
 
-	public boolean isPowered = true;
+	public int power = 0;
+	public boolean isPowered = false;
 
 	// 0:up, 1:down, 2:north, 3:south, 4:east, 5:west
 	public boolean[] sidesConnected = new boolean[6];
+
+	private TileEntity up, down, north, south, east, west;
 
 	public TileEntityRotaryShaft()
 	{
@@ -17,18 +20,19 @@ public class TileEntityRotaryShaft extends TileEntityWC {
 	@Override
 	public void updateEntity()
 	{
+		up = this.worldObj.getTileEntity(xCoord, yCoord + 1, zCoord);
+		down = this.worldObj.getTileEntity(xCoord, yCoord-1, zCoord);
+		north = this.worldObj.getTileEntity(xCoord, yCoord, zCoord+1);
+		south = this.worldObj.getTileEntity(xCoord, yCoord, zCoord-1);
+		east = this.worldObj.getTileEntity(xCoord+1, yCoord, zCoord);
+		west = this.worldObj.getTileEntity(xCoord-1, yCoord, zCoord);
+
 		this.updateConnectionsToRotaryShafts();
+		this.updatePower();
 	}
 
-	public void updateConnectionsToRotaryShafts()
+	private void updateConnectionsToRotaryShafts()
 	{
-		TileEntity up = this.worldObj.getTileEntity(xCoord, yCoord + 1, zCoord);
-		TileEntity down = this.worldObj.getTileEntity(xCoord, yCoord-1, zCoord);
-		TileEntity north = this.worldObj.getTileEntity(xCoord, yCoord, zCoord+1);
-		TileEntity south = this.worldObj.getTileEntity(xCoord, yCoord, zCoord-1);
-		TileEntity east = this.worldObj.getTileEntity(xCoord+1, yCoord, zCoord);
-		TileEntity west = this.worldObj.getTileEntity(xCoord-1, yCoord, zCoord);
-
 		sidesConnected[0] = (
 				up instanceof TileEntityRotaryShaft
 				|| up instanceof TileEntityMechanicalRoot
@@ -59,6 +63,11 @@ public class TileEntityRotaryShaft extends TileEntityWC {
 				west instanceof TileEntityRotaryShaft
 				|| west instanceof TileEntityMechanicalRoot
 		);
+	}
+
+	private void updatePower()
+	{
+		//
 	}
 
 	public boolean onlyOneOpposite(boolean[] directions)

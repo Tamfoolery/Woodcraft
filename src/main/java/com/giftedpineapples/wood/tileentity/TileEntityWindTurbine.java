@@ -6,7 +6,8 @@ import net.minecraft.util.AxisAlignedBB;
 
 public class TileEntityWindTurbine extends TileEntityWC {
 
-	public int powerOutput = 1000;
+	public boolean emitsKP = true;
+	public int power = 1000;
 
 	public TileEntityWindTurbine()
 	{
